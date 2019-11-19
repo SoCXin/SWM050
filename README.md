@@ -1,9 +1,12 @@
 ﻿# [RK3326](https://github.com/mcuyun/RK3326) 
 
-[![sites](mcuyun/mcuyun.png)](http://www.mcuyun.com)
+[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.qitas.cn) 
 
-#### [关于悠云](https://github.com/mcuyun/whyme)可访问 www.mcuyun.com
+#### [Vendor](https://github.com/sochub/Vendor)：[rock-chips](https://github.com/sochub/rockchips)
+#### [cortex](https://github.com/sochub/cortex)：[A35](https://github.com/sochub/CA35)
+#### [Level](https://github.com/sochub/Level)：
 
+## [芯片描述](https://github.com/sochub/RK3326/wiki) 
 
 ## [简介](https://github.com/mcuyun/RK3326/wiki)
 
@@ -19,20 +22,14 @@
 
 封装：TFBGA395L (14mm x 14mm; ball: 0.3mm pitch 0.65mm)
 
-### [瑞芯微平台](https://github.com/mcuyun/rockchips)
+### [资源收录](https://github.com/sochub/RK3326)
 
-平台相关资料
+* [文档](docs/) 
+* [linux系统](linux/)
 
-#### [linux系统](https://github.com/rockchip-linux/kernel.git)
 
-开源Linux系统固件
+### [选型建议](https://github.com/sochub)
 
-#### [参考资料](docs/)
+[RK3326](https://github.com/sochub/RK3326)入门级高性价比产品
 
-包括芯片相关资料
- 
----
-
-###  [悠云，为嵌入式](http://www.mcuyun.com)   
-###  qitas@qitas.cn
-
+###  [SoC资源平台](http://www.qitas.cn)   
