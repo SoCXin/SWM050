@@ -1,4 +1,4 @@
-﻿# [RK3326](https://github.com/mcuyun/RK3326) 
+﻿# [RK3326](https://github.com/sochub/RK3326) 
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.qitas.cn) 
 
@@ -12,9 +12,9 @@
 
 [![sites](docs/3326.png)](docs/)
 
-瑞芯微智联 4核 A35 with 1.5GHz
+瑞芯微 4xA35(1.5GHz)
 
-主要特点：集成8M ISP
+主要特点：8M ISP
 
 功能特点：Mali-G31MP2
 
@@ -30,6 +30,6 @@
 
 ### [选型建议](https://github.com/sochub)
 
-[RK3326](https://github.com/sochub/RK3326)入门级高性价比产品
+[RK3326](https://github.com/sochub/RK3326)入门级高性价比产品，定位盒子类产品
 
 ###  [SoC资源平台](http://www.qitas.cn)   
