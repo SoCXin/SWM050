@@ -1,35 +1,28 @@
-﻿# [RK3326](https://github.com/sochub/RK3326) 
+﻿# [SWM050](https://github.com/SoCXin/SWM050)
 
-[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.qitas.cn) 
+[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
 
-#### [Vendor](https://github.com/sochub/Vendor)：[rock-chips](https://github.com/sochub/rockchips)
-#### [cortex](https://github.com/sochub/cortex)：[A35](https://github.com/sochub/CA35)
-#### [Level](https://github.com/sochub/Level)：
+#### [Vendor](https://github.com/SoCXin/Vendor) ：[Synwit](http://www.synwit.cn)
+#### [Core](https://github.com/SoCXin/Cortex)：[Cortex M0](https://github.com/SoCXin/CM0)
+#### [Level](https://github.com/SoCXin/Level)：48MHz
 
-## [芯片描述](https://github.com/sochub/RK3326/wiki) 
+[SWM050](https://github.com/SoCXin/SWM050)
 
-## [简介](https://github.com/mcuyun/RK3326/wiki)
+[![sites](docs/SWM050.png)](https://item.szlcsc.com/178578.html)
+#### 关键特性
 
-[![sites](docs/3326.png)](docs/)
+* 32KBytes EEPROM (RN8612,100万次擦写)
+* RTC (温补)
+* UART x 6
 
-瑞芯微 4xA35(1.5GHz)
+### [资源收录](https://github.com/SoCXin/SWM050)
 
-主要特点：8M ISP
+* [参考文档](docs/)
+* [参考资源](src/)
+* [参考工程](project/)
 
-功能特点：Mali-G31MP2
+### [选型建议](https://github.com/SoCXin)
 
-主要短板：单USB 2.0 OTG，无HDMI
+[SWM050](https://github.com/SoCXin/SWM050)
 
-封装：TFBGA395L (14mm x 14mm; ball: 0.3mm pitch 0.65mm)
-
-### [资源收录](https://github.com/sochub/RK3326)
-
-* [文档](docs/) 
-* [linux系统](linux/)
-
-
-### [选型建议](https://github.com/sochub)
-
-[RK3326](https://github.com/sochub/RK3326)入门级高性价比产品，定位盒子类产品
-
-###  [SoC资源平台](http://www.qitas.cn)   
+###  [www.SoC.xin(芯)](http://www.SoC.Xin)
