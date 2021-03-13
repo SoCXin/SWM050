@@ -47,7 +47,7 @@ $(PROJECT).bin: $(PROJECT).elf
 	$(Q)$(OBJDUMP) -d $(*).elf > $(PROJECT).asm
 
 
-all:	$(PROJECT).elf $(PROJECT).bin $(PROJECT).asm
+all: $(PROJECT).bin $(PROJECT).asm
 
 .PHONY: clean
 
