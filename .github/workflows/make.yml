@@ -35,5 +35,12 @@ jobs:
 
       - name: make
         run: |
-          make -C src/
+          mkdir src/build
+          make -C src/blink
+          cp src/blink/*.bin src/build/
 
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ubuntu-build
+          path: src/build

@@ -2,7 +2,7 @@
 
 [![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
 
-[![Build Status](https://github.com/OS-Q/SWM050/workflows/make/badge.svg)](https://github.com/OS-Q/SWM050/actions/workflows/make.yml)
+[![Build Status](https://github.com/SoCXin/SWM050/workflows/make/badge.svg)](https://github.com/SoCXin/SWM050/actions/workflows/make.yml)
 
 #### [Synwit](http://www.synwit.cn)：[Cortex M0](https://github.com/SoCXin/CM0)
 #### [Level](https://github.com/SoCXin/Level)：50 MHz

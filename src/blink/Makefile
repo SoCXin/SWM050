@@ -20,9 +20,9 @@ OBJ += lib/SWM500_exti.o lib/SWM500_gpio.o lib/SWM500_wdt.o
 
 # projectfile(s)
 OBJ += main.o
-PROJECT = blinky
+PROJECT = blink
 
-%.o: %.c 
+%.o: %.c
 	@printf "  CC      $(*).c\n"
 	$(Q)$(CC) -c -o $@ $< $(CFLAGS)
 
