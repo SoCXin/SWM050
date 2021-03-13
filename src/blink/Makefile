@@ -20,7 +20,7 @@ OBJ += lib/SWM500_exti.o lib/SWM500_gpio.o lib/SWM500_wdt.o
 
 # projectfile(s)
 OBJ += main.o
-PROJECT = blink
+PROJECT = main
 
 %.o: %.c
 	@printf "  CC      $(*).c\n"
@@ -34,6 +34,10 @@ $(PROJECT).elf: $(OBJ)
 	@printf "  LD      $(@)\n"
 	$(Q)$(CC) -o $@ $^ $(CFLAGS) -T $(LDSCRIPT)
 
+$(PROJECT).bin: $(PROJECT).elf
+	@printf "  OBJCOPY\t$@\n"
+	$(Q)$(OBJCOPY) -O binary  $< $@
+
 %.bin: %.elf
 	@printf "  OBJCOPY $(*).bin\n"
 	$(Q)$(OBJCOPY) -Obinary $(*).elf $(*).bin
@@ -41,6 +45,7 @@ $(PROJECT).elf: $(OBJ)
 %.asm: %.elf
 	@printf "  OBJDUMP $(*).asm\n"
 	$(Q)$(OBJDUMP) -d $(*).elf > $(PROJECT).asm
+
 
 all:	$(PROJECT).elf $(PROJECT).bin $(PROJECT).asm
 

@@ -40,5 +40,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: build
+          name: upload
           path: src/build
