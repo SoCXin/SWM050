@@ -1,0 +1,52 @@
+name: src
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '**.yml'
+
+jobs:
+  build:
+    strategy:
+    fail-fast: false
+    matrix:
+      # example:
+      #   - "native-blink"
+      #   - "spl-blink"
+      os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          fetch-depth: 1
+
+      - name: make-action
+        uses: Qful/make-action@master
+        with:
+          release: 10-2020-q4
+
+      - name: build template
+        working-directory: src/template
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          make -C blink
+
+      - name: build template
+        working-directory: src/template
+        if: matrix.os == 'windows-latest'
+        run: |
+          make -C blink
+
+      - name: build template
+        working-directory: src/template
+        if: matrix.os == 'macos-latest'
+        run: |
+          make -C blink
+
+      - name: upload template
+        uses: actions/upload-artifact@v2
+        with:
+          name: template_${{ matrix.os }}
+          path: src/template/blink/
