@@ -33,7 +33,7 @@ RM = rm -rf
 # C Flags
 GCFLAGS  = -g -nostartfiles -mthumb -mcpu=$(CPU)
 GCFLAGS += $(INCLUDE)
-LDFLAGS += -T$(LSCRIPT) -mthumb -mcpu=$(CPU)
+LDFLAGS += -T$(LSCRIPT)
 ASFLAGS += -mcpu=$(CPU)
 
 
@@ -61,8 +61,6 @@ $(BINDIR)/$(PROJECT).elf: $(OBJ)
 
 macros:
 	$(CC) $(GCFLAGS) -dM -E - < /dev/null
-
-cleanBuild: clean
 
 clean:
 	$(RM) $(BINDIR)
