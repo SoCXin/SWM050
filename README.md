@@ -1,11 +1,11 @@
 ﻿# [SWM050](https://github.com/SoCXin/SWM050)
 
-[![sites](http://182.61.61.133/link/resources/SoC.png)](http://SoC.Xin)
+[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
 
 [![Build Status](https://github.com/SoCXin/SWM050/workflows/src/badge.svg)](https://github.com/SoCXin/SWM050/actions/workflows/src.yml)
 
 * [Synwit](http://www.synwit.cn): [Cortex-M0](https://github.com/SoCXin/Cortex)
-* [L3R4](https://github.com/SoCXin/Level): 50 MHz x 0.95 DMIPS/MHz (122CoreMark)
+* [L2R2](https://github.com/SoCXin/Level): 50 MHz x 0.95 DMIPS/MHz (122CoreMark)
 
 ## [简介](https://github.com/SoCXin/SWM050/wiki)
 
@@ -15,8 +15,8 @@
 
 ### 关键特性
 
-* 50MHz主频,低成本
-* 小封装兼容 TSSOP8/SSOP16
+* 高主频低成本
+* 小封装
 
 #### 封装规格
 
@@ -31,7 +31,7 @@
 
 ### [选型建议](https://github.com/SoCXin)
 
-[SWM050](https://github.com/SoCXin/SWM050)
+[SWM050](https://github.com/SoCXin/SWM050) 官网下架，暂不可得。
 
 
 ### [探索芯世界 www.SoC.xin](http://www.SoC.Xin)

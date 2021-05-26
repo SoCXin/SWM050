@@ -9,12 +9,9 @@ on:
 jobs:
   build:
     strategy:
-    fail-fast: false
-    matrix:
-      # example:
-      #   - "native-blink"
-      #   - "spl-blink"
-      os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -37,12 +34,13 @@ jobs:
         working-directory: src/template
         if: matrix.os == 'windows-latest'
         run: |
-          make -C blink
+          make -C blink SHELL=cmd
 
       - name: build template
         working-directory: src/template
         if: matrix.os == 'macos-latest'
         run: |
+          brew install make
           make -C blink
 
       - name: upload template
